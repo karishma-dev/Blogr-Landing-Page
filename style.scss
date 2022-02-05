@@ -54,12 +54,13 @@ header{
     border-bottom-left-radius: 90px;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
 // Header Pattern
 .pattern{
     background: url("images/bg-pattern-intro-mobile.svg");
-    background-size: cover;
+    background-size: contain;
     width: 1000px;
     height: 1000px;
     position: absolute;
@@ -67,7 +68,6 @@ header{
     left: -200px;
     z-index: 0;
 }
-
 // Navigation Bar
 nav{
     display: grid;
@@ -445,11 +445,25 @@ footer span:hover{
     font-size: 1rem;
     text-align: center; 
     padding: 15px;
+    width: 100vw;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
+@media (max-width: 500px) {
+    header,.service-container,.art-container,.about-container,footer,.attribution{
+        min-width: 500px;
+    }
+}
+@media (max-width: 700px) {
+    .pattern{
+        width: 500px;
+        height: 500px;
+        top: 0px;
+        left: 0px;
+    }
+}
 @media (min-width: 1200px) {
     // Header
     header{
@@ -460,10 +474,10 @@ footer span:hover{
         background: url("images/bg-pattern-intro-desktop.svg");
         background-size: cover;
         position: absolute;
-        top: -600px;
-        left: 100px;
-        width: 1500px;
-        height: 1700px;
+        width: 1200px;
+        height: 1000px;
+        top: -300px;
+        left: 2vw;
         z-index: 0;
     }
 
@@ -618,6 +632,14 @@ footer span:hover{
     }
     .footer-col{
         padding: 0px 40px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .pattern{
+        width: 1200px;
+        height: 1000px;
+        top: -300px;
+        left: 2vw;
     }
 }
 @media (min-width: 1800px) {
