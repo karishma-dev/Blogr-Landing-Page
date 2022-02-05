@@ -82,19 +82,19 @@ nav{
 .nav-menu{
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    text-align: center;
     background: white;
     color: black;
     position: absolute;
-    left: 25%;
-    margin: 0px auto;
+    right: 13vw;
     height: 0px;
     overflow: hidden;
     z-index: 2;
+    width: fit-content;
 }
 .nav-menu.active{
-    padding: 20px; 
-    margin: 10px auto;
+    padding: 20px 0px; 
+    margin: 10px 0px;
     height: fit-content;
     border-radius: 5px;
 }
@@ -133,6 +133,7 @@ nav{
 // Title and Submenu
 .title{
     margin: 0px 80px;
+
     span{
         display: inline;
         text-align: center;
@@ -478,6 +479,7 @@ footer span:hover{
         color: white;
         position: static;
         margin: 0px 0px 0px 25px;
+        transform: none;
     }
     .nav-links{
         display: flex;

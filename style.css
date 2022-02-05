@@ -78,20 +78,22 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
+  text-align: center;
   background: white;
   color: black;
   position: absolute;
-  left: 25%;
-  margin: 0px auto;
+  right: 13vw;
   height: 0px;
   overflow: hidden;
   z-index: 2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .nav-menu.active {
-  padding: 20px;
-  margin: 10px auto;
+  padding: 20px 0px;
+  margin: 10px 0px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -516,6 +518,8 @@ footer span:hover {
     color: white;
     position: static;
     margin: 0px 0px 0px 25px;
+    -webkit-transform: none;
+            transform: none;
   }
   .nav-links {
     display: -webkit-box;
