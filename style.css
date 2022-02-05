@@ -31,7 +31,6 @@ span {
 
 button {
   font-size: 1rem;
-  cursor: pointer;
   font-weight: 700;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -198,7 +197,6 @@ hr {
 }
 
 .hamburger {
-  cursor: pointer;
   background: url("images/icon-hamburger.svg");
   background-size: contain;
   width: 37px;
@@ -500,6 +498,12 @@ footer span:hover {
     height: 500px;
     top: 0px;
     left: 0px;
+  }
+}
+
+@media (min-width: 700px) {
+  button {
+    cursor: pointer;
   }
 }
 
